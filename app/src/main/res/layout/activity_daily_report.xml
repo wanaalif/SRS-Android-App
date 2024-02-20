@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueBg"
+    android:orientation="vertical"
+    android:gravity="bottom">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+        android:background="@drawable/bgloginform"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingStart="70dp"
+        android:paddingEnd="70dp">
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginBottom="26dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:background="@drawable/bginput_field"
+            android:inputType="textPersonName"
+            android:hint="Name of Reporter"/>
+
+        <EditText
+            android:id="@+id/editPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="26dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:background="@drawable/bginput_field"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:inputType="phone"
+            android:hint="Phone Number"/>
+
+        <EditText
+            android:id="@+id/editLocation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="26dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:background="@drawable/bginput_field"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:hint="Location"/>
+
+        <Spinner
+            android:id="@+id/locationSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/editDate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="26dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:background="@drawable/bginput_field"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:inputType="date"
+            android:hint="Date"/>
+
+        <EditText
+            android:id="@+id/editDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/bginput_field"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:hint="Description"
+            android:minLines="4"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@drawable/buttonmain"
+            android:layout_gravity="center"
+            android:text="Submit"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</LinearLayout>

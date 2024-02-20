@@ -1,0 +1,82 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/blueItem"
+    android:paddingTop="5dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppinsmedium"
+            android:paddingStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/text_full_name"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/text_full_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppinsmedium"
+            android:paddingStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/text_date"
+            app:layout_constraintEnd_toStartOf="@+id/text_contact"
+            app:layout_constraintTop_toTopOf="@id/text_date" />
+
+        <TextView
+            android:id="@+id/text_contact"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppinsmedium"
+            android:paddingStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/text_full_name"
+            app:layout_constraintEnd_toStartOf="@+id/text_location"
+            app:layout_constraintTop_toTopOf="@+id/text_full_name" />
+
+        <TextView
+            android:id="@+id/text_location"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppinsmedium"
+            android:paddingStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/text_contact"
+            app:layout_constraintEnd_toStartOf="@id/text_shift"
+            app:layout_constraintTop_toTopOf="@+id/text_full_name" />
+
+        <TextView
+            android:id="@+id/text_shift"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppinsmedium"
+            android:paddingStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/text_location"
+            app:layout_constraintEnd_toStartOf="@id/remark"
+            app:layout_constraintTop_toTopOf="@+id/text_full_name" />
+
+        <TextView
+            android:id="@+id/remark"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppinsmedium"
+            android:paddingStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/text_shift"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_full_name"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

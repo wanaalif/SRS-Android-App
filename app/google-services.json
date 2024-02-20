@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "787136985744",
+    "project_id": "srsapplication-d5f65",
+    "storage_bucket": "srsapplication-d5f65.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787136985744:android:86635e218e51dda9247615",
+        "android_client_info": {
+          "package_name": "com.example.srsapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzdFGUKL5dZWQDubIzX3ng-HVbIYmr3GA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

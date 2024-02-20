@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">SRS Application</string>
+    <string name="forgotPass">Forgot password?</string>
+    <string name="goSignUp">Don\'t have an account? Sign up</string>
+    <string name="goLogin">Already have an account? Log in</string>
+    <string-array name="locations_array">
+        <item>Jalan Kiambang 1</item>
+        <item>Jalan Kiambang 2</item>
+        <item>Jalan Kiambang 3</item>
+        <item>Jalan Kiambang 4</item>
+        <item>Jalan Kiambang 5</item>
+        <item>Jalan Kiambang 6</item>
+        <item>Jalan Kiambang 7</item>
+        <item>Jalan Kiambang 8</item>
+        <item>Jalan Kiambang 9</item>
+        <item>Jalan Kiambang 10</item>
+    </string-array>
+
+    <string name="leader">Leader</string>
+    <string name="select_date">Select date</string>
+    <string name="select_shift_start_time">Select shift start time</string>
+    <string name="select_shift_end_time">Select shift end time</string>
+    <string name="select_location">Select location</string>
+</resources>

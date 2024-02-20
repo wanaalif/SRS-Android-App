@@ -1,0 +1,125 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/blueBtn"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/header_background"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:textColor="@color/blueBtn"
+                android:text="Date"
+                android:textSize="16sp"
+                android:paddingStart="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/text_full_name"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/text_full_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Full Name"
+                android:textColor="@color/blueBtn"
+                android:textSize="16sp"
+                android:paddingStart="10dp"
+                app:layout_constraintStart_toEndOf="@id/text_date"
+                app:layout_constraintEnd_toStartOf="@+id/text_contact"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/text_contact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Contact"
+                android:textColor="@color/blueBtn"
+                android:textSize="16sp"
+                android:paddingStart="5dp"
+                android:paddingEnd="16dp"
+                app:layout_constraintStart_toEndOf="@+id/text_full_name"
+                app:layout_constraintEnd_toStartOf="@id/text_location"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/text_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Location"
+                android:textColor="@color/blueBtn"
+                android:textSize="16sp"
+                android:paddingStart="5dp"
+                android:paddingEnd="16dp"
+                app:layout_constraintStart_toEndOf="@+id/text_contact"
+                app:layout_constraintEnd_toStartOf="@id/text_shift"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/text_shift"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Shift"
+                android:textColor="@color/blueBtn"
+                android:textSize="16sp"
+                android:paddingStart="5dp"
+                android:paddingEnd="16dp"
+                app:layout_constraintStart_toEndOf="@+id/text_location"
+                app:layout_constraintEnd_toStartOf="@id/remark"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/remark"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Remark"
+                android:textColor="@color/blueBtn"
+                android:textSize="16sp"
+                android:paddingStart="5dp"
+                android:paddingEnd="16dp"
+                app:layout_constraintStart_toEndOf="@+id/text_shift"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_schedule1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/header_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -56,7 +56,6 @@ captures/
 
 # FIREBASE - API KEYS (IMPORTANT!)
 google-services.json
-GoogleService-Info.plist
 
 # Other
 *.DS_Store
